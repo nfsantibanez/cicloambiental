@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> Ciclo Ambiental </title>
+  <title> Cicloambiental </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <%= image_tag "icon_ca.jpg", alt: "", title: "Ciclo Ambiental", size: "90x90" %>
+  <!-- <%= image_tag "icon_ca_p.png", alt: "", title: "Ciclo Ambiental", size: "90x90" %> -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
@@ -33,15 +33,17 @@
 
       <div id="logo" class="pull-left">
         <h1>
-          <a href="#intro" class="scrollto">Ciclo Ambiental</a></h1>
+          <a href="#intro" class="scrollto">
+            <%= image_tag "icon_ca_p2.png", alt: "", title: "Cicloambiental", size: "50x50" %>
+            Cicloambiental
+          </a>
+        </h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Inicio</a></li>
-          <li><a href="#about">Empresa</a></li>
+          <li class="menu"><a href="#about">Empresa</a></li>
           <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
           <li><a href="#team">Equipo</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
@@ -56,76 +58,19 @@
     <div class="intro-container">
       <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-        <ol class="carousel-indicators"></ol>
-
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active">
-            <div class="carousel-background"><%= image_tag "intro-carousel/1.jpg", alt: ""%></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2> Frase Cliche 1...</h2>
-                <p> Bla Bla Bla </p>
-                <a href="#featured-services" class="btn-get-started scrollto">Conócenos</a>
-              </div>
+            <div class="carousel-background", color=>
             </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><%= image_tag "intro-carousel/2.jpg", alt: "" %></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2> Frase Cliche 2...</h2>
-                <p> Bla Bla Bla </p>
-                <a href="#featured-services" class="btn-get-started scrollto">Conócenos</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><%= image_tag "intro-carousel/3.jpg", alt: "" %></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2> Frase Cliche 3...</h2>
-                <p> Bla Bla Bla </p>
-                <a href="#featured-services" class="btn-get-started scrollto">Conócenos</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><%= image_tag "intro-carousel/4.jpg", alt: "" %></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2> Frase Cliche 4...</h2>
-                <p> Bla Bla Bla </p>
-                <a href="#featured-services" class="btn-get-started scrollto">Conócenos</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><%= image_tag "intro-carousel/5.jpg", alt: "" %></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2> Frase Cliche 5...</h2>
-                <p> Bla Bla Bla </p>
-                <a href="#featured-services" class="btn-get-started scrollto">Conócenos</a>
+                <%= image_tag "logo_ca_p.png", title: "Cicloambiental", size: "1000x1000" %>
               </div>
             </div>
           </div>
 
         </div>
-
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-
-        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Siguiente</span>
-        </a>
 
       </div>
     </div>
@@ -143,19 +88,27 @@
           <div class="col-lg-4 box">
             <i class="ion-ios-bookmarks-outline"></i>
             <h4 class="title"><a>Excelencia</a></h4>
-            <p class="description"> bla bla bla </p>
+            <p class="description">
+              Realizamos la gestión de todos sus permisos ambientales sectoriales
+              necesarios para su funcionamiento y cumplimiento de las normativas vigentes
+            </p>
           </div>
 
-          <div class="col-lg-4 box box-bg">
+          <div class="col-lg-4 box">
             <i class="ion-ios-stopwatch-outline"></i>
             <h4 class="title"><a>Rapidez</a></h4>
-            <p class="description"> bla bla bla </p>
+            <p class="description"> Aplicamos nuestra experiencia y conocimiento
+              en solucionar sus problemas ambientales de forma rápida
+            </p>
           </div>
 
           <div class="col-lg-4 box">
             <i class="ion-ios-heart-outline"></i>
             <h4 class="title"><a>Compromiso</a></h4>
-            <p class="description"> bla bla bla </p>
+            <p class="description">
+              Entregamos una solución al tratamiento de sus residuos acorde al
+              tamaño de su empresa optimizando sus recursos
+            </p>
           </div>
 
         </div>
@@ -170,12 +123,17 @@
 
         <header class="section-header">
           <h3>Empresa</h3>
-          <p> Breves palabras sobre como nació la empresa y mencionar lo más destacable</p>
+          <p>
+            Cicloambiental Ingeniería y Gestión SpA es una empresa formada por
+            profesionales con más de 15 años de experiencia en el ámbito ambiental,
+            enfocada principalmente en las áreas de gestión ambiental, ingeniería ambiental
+            y prevención de riesgos
+          </p>
         </header>
 
         <div class="row about-cols">
 
-          <div class="col-md-4 wow fadeInUp">
+          <div class="col-md-6 wow fadeInUp">
             <div class="about-col">
               <div class="img">
                 <%= image_tag "about-mission.jpg", alt: "", class: "img-fluid"%>
@@ -183,11 +141,16 @@
               </div>
               <h2 class="title"><a>Nuestra Misión</a></h2>
               <p>
-                Nuestra misión es...
+                Entregar una amplia oferta de servicios ambientales en las áreas
+                de Ingeniería y gestión, con el propósito de generar soluciones
+                integrales a las diferentes problemáticas ambientales que se ven
+                enfrentadas las empresas en los distintos sectores productivos y
+                de servicios, promoviendo la eficiencia y la optimización de recursos
               </p>
             </div>
           </div>
 
+          <!--
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
@@ -196,12 +159,13 @@
               </div>
               <h2 class="title"><a>Nuestra Estratégia</a></h2>
               <p>
-                Nuestra estrategia es...
+
               </p>
             </div>
           </div>
+          -->
 
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
                 <%= image_tag "about-vision.jpg", alt: "", class: "img-fluid"%>
@@ -209,7 +173,8 @@
               </div>
               <h2 class="title"><a>Nuestra Visión</a></h2>
               <p>
-                Nuestra visión es...
+                Ser una empresa reconocida en el ámbito ambiental por entregar
+                un servicio de excelencia, profesional y de alta calidad.
               </p>
             </div>
           </div>
@@ -227,209 +192,106 @@
 
         <header class="section-header wow fadeInUp">
           <h3>Servicios</h3>
-          <p> Nos especializamos en... </p>
+          <p> Nos especializamos en 3 principales áreas de la ingeniería y gestión ambiental </p>
         </header>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a>Normativas</a></h4>
-            <p class="description">...</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a>Regulaciones</a></h4>
-            <p class="description">...</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+          <div class="col-lg-12 col-md-12 box wow bounceInUp" data-wow-duration="1.5s">
             <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a>Cotizaciones</a></h4>
-            <p class="description">...</p>
+            <h4 class="title"><a>Gestión Ambiental</a></h4>
+            <p class="description">
+              ▪ Elaboración y tramitación de Declaraciones de Impacto Ambiental,
+              Estudios de Impacto Ambiental y Cartas de pertinencias <br>
+              ▪ Estudios de línea base (estimación de emisiones atmosféricas,
+              flora y fauna, topografía, entre otros) <br>
+              ▪ Auditorías de Seguimiento Resoluciones de Calificación Ambiental (RCA) <br>
+              ▪ Tramitación de permisos sectoriales ante la SEREMI de Salud: <br>
+                  &emsp;&emsp;&emsp;&emsp; ◦ Calificación Industrial <br>
+                  &emsp;&emsp;&emsp;&emsp; ◦ Informes sanitarios <br>
+                  &emsp;&emsp;&emsp;&emsp; ◦ Autorizaciones sanitarias de almacenamiento y disposición de
+                  Residuos peligrosos (RESPEL) y no peligrosos, Sustancias peligrosas (SUSPEL),
+                  planes de manejo de RESPEL, entre otros <br>
+                  &emsp;&emsp;&emsp;&emsp; ◦ Cambios de titularidad de autorizaciones <br>
+                  &emsp;&emsp;&emsp;&emsp; ◦ Inscripción y registro de fuentes fijas (F138) <br>
+              ▪ Auditorías ambientales <br>
+              ▪ Diagnósticos normativos y elaboración de matrices ambientales <br>
+              ▪ Reportes de actualización de normativa ambiental <br>
+
+              ▪ Evaluación y diagnósticos de sistemas de generación y manejo de
+              residuos sólidos (Peligrosos y no peligrosos), elaboración de planes de manejo <br>
+              ▪ Implementación de planes de Producción limpia <br>
+              ▪ Capacitaciones en manejo de residuos (sólidos y líquidos) y seguridad <br>
+              ▪ Ventanilla única <br>
+                &emsp;&emsp;&emsp;&emsp; ◦ Solicitud de establecimiento <br>
+                &emsp;&emsp;&emsp;&emsp; ◦ Cambio representante legal o encargado establecimiento <br>
+                &emsp;&emsp;&emsp;&emsp; ◦ Declaraciones anuales obligatorias RETC: SINADER, Fuentes fijas F138,
+              15027, entre otros <br>
+              ▪ Tramitación de permisos sectoriales ante el SAG: Subdivisiones, fusiones
+            </p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+
+          <div class="col-lg-12 col-md-12 box wow bounceInUp" data-wow-duration="1s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a>Ingeniería Ambiental</a></h4>
+            <p class="description">
+              ▪ Diseño, implementación y puesta en marcha de sistemas de tratamiento
+              de RILES y aguas servidas <br>
+              ▪ Diagnósticos y optimización de sistemas de tratamiento de RILES y
+              aguas servidas ya implementados <br>
+              ▪ Supervisión de plantas de tratamiento de RILES y aguas servidas,
+              incluyendo manejo de personal a cargo de la operación, coordinación
+              con proveedores de químicos, insumos y laboratorio, mantenimientos
+              preventivos y control operacional para dar cumplimiento con las
+              normativas ambientales aplicables <br>
+              ▪ Realización de capacitaciones para operadores de Sistemas de tratamiento
+              de RILES y aguas servidas <br>
+              ▪ Upgrade de Sistemas de tratamiento de aguas (Reingeniería, reparación
+              y/o ampliación de Plantas de tratamiento de aguas servidas, agua potable,
+              aguas de procesos, RILES) <br>
+              ▪ Diseño de Sistemas de purificación de aguas con equipos FRP
+              (Filtros para turbiedad, carbón activado, ablandadores, abatidores
+              de arsénico, hierro-manganeso, sistemas de osmosis inversa de bajos
+              flujos, entre otros)
+            </p>
+          </div>
+
+          <div class="col-lg-12 col-md-12 box wow bounceInUp" data-wow-duration="0.5s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a>Prevención de Riesgos</a></h4>
+            <p class="description">
+              ▪ Programas de prevención de riesgos <br>
+              ▪ Procedimientos de trabajo seguro <br>
+              ▪ Reglamento Interno de orden, higiene y seguridad <br>
+              ▪ Planes de emergencia y/o contingencia para transporte,
+              almacenamiento, manejo de sustancias y disposición de residuos
+              peligrosos y no peligrosos <br>
+              ▪ Estudios de densidad de carga combustible <br>
+            </p>
+          </div>
+
+          <!--
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
             <h4 class="title"><a>Presupuestos</a></h4>
             <p class="description">...</p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
             <h4 class="title"><a>Compra de equipos</a></h4>
             <p class="description">...</p>
           </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-people-outline"></i></div>
             <h4 class="title"><a>Planificación</a></h4>
             <p class="description">...</p>
           </div>
+          -->
 
         </div>
 
       </div>
     </section><!-- #services -->
-
-    <!--==========================
-      Portfolio Section
-    ============================-->
-    <section id="portfolio"  class="section-bg" >
-      <div class="container">
-
-        <header class="section-header">
-          <h3 class="section-title">Portafolio</h3>
-        </header>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <%= image_tag "portfolio/app1.jpg", alt: "", class: "img-fluid"%>
-                <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <%= image_tag "portfolio/web3.jpg", alt: "", class: "img-fluid"%>
-                <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Web 3</a></h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <%= image_tag "portfolio/app2.jpg", alt: "", class: "img-fluid"%>
-                <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">App 2</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <%= image_tag "portfolio/card2.jpg", alt: "", class: "img-fluid"%>
-                <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Card 2</a></h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <%= image_tag "portfolio/web2.jpg", alt: "", class: "img-fluid"%>
-                <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Web 2</a></h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <%= image_tag "portfolio/app3.jpg", alt: "", class: "img-fluid"%>
-                <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">App 3</a></h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <%= image_tag "portfolio/card1.jpg", alt: "", class: "img-fluid"%>
-                <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Card 1</a></h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <%= image_tag "portfolio/card3.jpg", alt: "", class: "img-fluid"%>
-                <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Card 3</a></h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <%= image_tag "portfolio/web1.jpg", alt: "", class: "img-fluid"%>
-                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Web 1</a></h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #portfolio -->
 
     <!--==========================
       Clients Section
@@ -442,14 +304,12 @@
         </header>
 
         <div class="owl-carousel clients-carousel">
-          <%= image_tag "clients/client-1.png", alt: ""%>
-          <%= image_tag "clients/client-2.png", alt: ""%>
-          <%= image_tag "clients/client-3.png", alt: ""%>
-          <%= image_tag "clients/client-4.png", alt: ""%>
-          <%= image_tag "clients/client-5.png", alt: ""%>
-          <%= image_tag "clients/client-6.png", alt: ""%>
-          <%= image_tag "clients/client-7.png", alt: ""%>
-          <%= image_tag "clients/client-8.png", alt: ""%>
+          <%= image_tag "polkura.png", alt: ""%>
+          <%= image_tag "blank.png", alt: ""%>
+          <%= image_tag "flowin.png", alt: ""%>
+          <%= image_tag "blank.png", alt: ""%>
+          <%= image_tag "icsa.png", alt: ""%>
+          <%= image_tag "blank.png", alt: ""%>
         </div>
 
       </div>
@@ -462,12 +322,12 @@
       <div class="container">
         <div class="section-header wow fadeInUp">
           <h3>Equipo</h3>
-          <p>Nuestro equipo está compuesto por...</p>
+          <p>Nuestro equipo está compuesto por</p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp">
+          <div class="col-lg-6 col-md-6 wow fadeInUp">
             <div class="member">
               <%= image_tag "clau.jpg", alt: "", class: "img-fluid"%>
               <div class="member-info">
@@ -475,15 +335,15 @@
                   <h4>Claudia Muñoz</h4>
                   <span>Gerente de Proyectos</span>
                   <div class="social">
-                    <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a href="https://linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="member">
               <%= image_tag "norma.jpg", alt: "", class: "img-fluid"%>
               <div class="member-info">
@@ -491,14 +351,15 @@
                   <h4>Norma Acuña</h4>
                   <span>Gerente de Finanzas y RRHH</span>
                   <div class="social">
-                    <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a href="https://linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
+          <!--
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
               <%= image_tag "nico2.jpg", alt: "", class: "img-fluid"%>
@@ -514,6 +375,7 @@
               </div>
             </div>
           </div>
+          -->
 
         </div>
 
@@ -528,37 +390,30 @@
 
         <div class="section-header">
           <h3>Contáctanos</h3>
-          <p> Si deseas realizar un proyecto con nosotros o solicitar nuestros servicios escríbenos,</p>
+          <p> Si deseas realizar un proyecto con nosotros o solicitar nuestros servicios escríbenos o llámanos </p>
         </div>
 
         <div class="row contact-info">
 
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Dirección</h3>
-              <address>Duble Almeyda 3221 depto 204, Santiago, Chile</address>
-            </div>
-          </div>
-
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Teléfono</h3>
-              <p><a href="tel:+56942645374">+56 9 42645374</a></p>
+              <p><a>+56 9 42645374</a></p>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Correo</h3>
-              <p><a href="mailto:claudia@cicloambiental.cl">cicloambiental@cicloambiental.cl</a></p>
+              <p><a href="mailto:contacto@cicloambiental.cl">contacto@cicloambiental.cl</a></p>
             </div>
           </div>
 
         </div>
 
+        <!--
         <div class="form">
           <div id="sendmessage">Tu correo a sido eviado. Gracias por contactarnos.</div>
           <div id="errormessage"></div>
@@ -586,6 +441,7 @@
         </div>
 
       </div>
+      -->
     </section><!-- #contact -->
 
   </main>
@@ -598,12 +454,16 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Ciclo Ambiental</h3>
-            <p> Bla Bla Bla... </p>
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Cicloambiental</h3>
+            <p> Cicloambiental Ingeniería y Gestión SpA es una empresa formada
+              por profesionales con más de 15 años de experiencia en el ámbito
+              ambiental, enfocada principalmente en las áreas de gestión ambiental,
+              ingeniería ambiental y prevención de riesgos
+            </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Links Útiles</h4>
             <ul>
               <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Inicio</a></li>
@@ -613,14 +473,13 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contáctanos</h4>
             <p>
-              Duble Almeyda 3221, depto 204<br>
               Región Metropilitana, Santiago<br>
               Chile <br>
               <strong>Teléfono:</strong> +56 9 42645374<br>
-              <strong>Correo:</strong> cicloambiental@cicloambiental.cl<br>
+              <strong>Correo:</strong> contacto@cicloambiental.cl<br>
             </p>
 
             <div class="social-links">
@@ -631,22 +490,13 @@
 
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Suscríbete</h4>
-            <p> Recibe las últimas noticias relacionadas con el rubro de la
-              ingeniería ambiental y el medioambiente </p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
-            </form>
-          </div>
-
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Ciclo Ambiental</strong>. All Rights Reserved
+        &copy; Copyright <strong>Cicloambiental</strong>. All Rights Reserved
       </div>
       <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
